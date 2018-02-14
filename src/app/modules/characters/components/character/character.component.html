@@ -1,0 +1,6 @@
+<p ngSwitch="{{character.rank}}">
+	<span *ngSwitchCase="'Captain'" [style.color]="'red'">{{character.rank}} {{character.name}} ({{character.actor}})</span>
+	<span *ngSwitchCase="'Doctor'" [style.color]="'blue'">{{character.rank}} {{character.name}} ({{character.actor}})</span>
+	<span *ngSwitchCase="'Commander'" [style.color]="'green'">{{character.rank}} {{character.name}} ({{character.actor}})</span>
+	<span *ngSwitchCase="'Lieutenant Commander'" [style.color]="'#00c0c0'">{{character.rank}} {{character.name}} ({{character.actor}})</span>
+</p>
